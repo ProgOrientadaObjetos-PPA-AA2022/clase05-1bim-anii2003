@@ -11,39 +11,48 @@ package paquete1;
  */
 public class Persona {
 
-    private  String nombre;
-    private  String cedula;
-    private  Barrio barrio;
-    
-    public  Persona(String n, String ced, Barrio b){
+    private String nombre;
+    private String cedula;
+    private Barrio barrio;
+
+    public Persona(String n, String ced, Barrio b) {
         nombre = n;
         cedula = ced;
         barrio = b;
     }
-    
-    public void establecerNombre(String n){
+
+    public void establecerNombre(String n) {
         nombre = n;
     }
-    
-    public void establecerCedula(String n){
+
+    public void establecerCedula(String n) {
         cedula = n;
     }
-    
-    public void establecerBarrio(Barrio n){
+
+    public void establecerBarrio(Barrio n) {
         barrio = n;
     }
-    
-    public String obtenerNombre(){
+
+    public String obtenerNombre() {
         return nombre;
     }
-    
-    public String obtenerCedula(){
+
+    public String obtenerCedula() {
         return cedula;
     }
-    
-    public Barrio obtenerBarrio(){
+
+    public Barrio obtenerBarrio() {
         return barrio;
     }
-    
-    
+
+    public String toString() {
+        String cadena = String.format("Nombre: %s\n"
+                + "Cédula: %s\n"
+                + "Barrio: %s\n",
+                nombre,
+                cedula,
+                barrio.obtenerNombre());
+        return cadena;
+    }
+
 }

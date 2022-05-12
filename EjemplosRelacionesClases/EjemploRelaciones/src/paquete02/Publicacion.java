@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquetedos;
+package paquete02;
+import paquete03.Autor;
 
 /**
  *
  * @author reroes
  */
 public class Publicacion {
-
+    
     private Autor autor;
     private int anioPublicacion;
 
